@@ -566,7 +566,7 @@ Togel
             margin-bottom: 10px
         }
 
-        .nexus-pay-modal {
+        .pay-modal {
             background-color: rgba(0,0,0,.5);
             text-align: center
         }

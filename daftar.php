@@ -19,13 +19,13 @@
   <meta name="robots" content="index, nofollow">
 
 
-    <meta name="twitter:title" content="KING808 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
+    <meta name="twitter:title" content="JONATAN777 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
 
-    <meta name="twitter:description" content="KING808 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 25 Ribu Rupiah.">
+    <meta name="twitter:description" content="JONATAN777 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 25 Ribu Rupiah.">
 
-    <meta property="og:title" content="KING808 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
+    <meta property="og:title" content="JONATAN777 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
 
-    <meta property="og:description" content="KING808 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 25 Ribu Rupiah.">
+    <meta property="og:description" content="JONATAN777 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 25 Ribu Rupiah.">
 
     <meta name="robots" content="INDEX, FOLLOW">
 
@@ -35,7 +35,7 @@
 
     <meta name="og:type" content="website">
 
-    <meta name="author" content="KING808">
+    <meta name="author" content="JONATAN777">
 </head>
 </html>
 

@@ -14,7 +14,7 @@ Syarat server:
 
 Panduan instalasi:
 1. Buat database seperti biasa di cpanel
-2. Import nexus77_scam.sql di phpmyadmin
+2. Import jonatan777.sql di phpmyadmin
 3. Buka file koneksi.php dalam folder mimintop/modul
 4. Ganti value berikut sesuaikan dengan database:
   $username = "USER_DATABASE";
