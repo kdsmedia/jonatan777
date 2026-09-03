@@ -1,0 +1,39 @@
+Syarat server:
+1. PHP versi 7.4+
+2. Ektensi curl
+3. Ektensi pdo_mysql
+4. Ekstensi OpenSSL / mode https
+5. Ekstensi intl
+6. Ekstensi mbstring
+7. Ekstensi tokenizer
+8. Ekstensi XML
+9. Ekstensi Zip 
+10. Ekstensi GD
+11. Ekstensi Fileinfo
+
+
+Panduan instalasi:
+1. Buat database seperti biasa di cpanel
+2. Import nexus77_scam.sql di phpmyadmin
+3. Buka file koneksi.php dalam folder mimintop/modul
+4. Ganti value berikut sesuaikan dengan database:
+  $username = "USER_DATABASE";
+  $password = "PASS_DATABASE";
+  $database = "NAMA_DATABASE";
+5. Selesai.
+
+
+Halaman admin:
+https://domain.com/mimintop/
+
+Login admin:
+user: admin
+pass: admin
+
+Login user:
+user: demo
+pass: demo
+
+
+
+MC PROJECT
