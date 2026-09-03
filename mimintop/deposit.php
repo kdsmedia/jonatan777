@@ -48,15 +48,21 @@
                       $data_akun_deposit = mysqli_fetch_array($akun_deposit);
                       $nama_lengkap_akun_deposit = $data_akun_deposit['nama_lengkap_akun'];
 
-                      $rekening_anggota_deposit = mysqli_query($koneksi, "SELECT * FROM rekening_anggota WHERE id_rekening_anggota = '$id_rekening_anggota_deposit'");
-                      $data_rekening_anggota_deposit = mysqli_fetch_array($rekening_anggota_deposit);
-                      $kategori_rekening_anggota_deposit = $data_rekening_anggota_deposit['kategori_rekening_anggota'];
-                      $id_rekening_rekening_anggota_deposit = $data_rekening_anggota_deposit['id_rekening_rekening_anggota'];
-                      $nama_rekening_anggota_deposit = $data_rekening_anggota_deposit['nama_rekening_anggota'];
-                      $nomor_rekening_anggota_deposit = $data_rekening_anggota_deposit['nomor_rekening_anggota'];
-                      $rekening_anggota = mysqli_query($koneksi, "SELECT * FROM rekening WHERE id_rekening = '$id_rekening_rekening_anggota_deposit'");
-                      $data_rekening_anggota = mysqli_fetch_array($rekening_anggota);
-                      $jenis_rekening_anggota = $data_rekening_anggota['jenis_rekening'];
+                      if ($kategori_rekening_deposit == "qris") {
+                          $jenis_rekening_anggota = "QRIS";
+                          $nama_rekening_anggota_deposit = "-";
+                          $nomor_rekening_anggota_deposit = "-";
+                      } else {
+                          $rekening_anggota_deposit = mysqli_query($koneksi, "SELECT * FROM rekening_anggota WHERE id_rekening_anggota = '$id_rekening_anggota_deposit'");
+                          $data_rekening_anggota_deposit = mysqli_fetch_array($rekening_anggota_deposit);
+                          $kategori_rekening_anggota_deposit = $data_rekening_anggota_deposit['kategori_rekening_anggota'];
+                          $id_rekening_rekening_anggota_deposit = $data_rekening_anggota_deposit['id_rekening_rekening_anggota'];
+                          $nama_rekening_anggota_deposit = $data_rekening_anggota_deposit['nama_rekening_anggota'];
+                          $nomor_rekening_anggota_deposit = $data_rekening_anggota_deposit['nomor_rekening_anggota'];
+                          $rekening_anggota = mysqli_query($koneksi, "SELECT * FROM rekening WHERE id_rekening = '$id_rekening_rekening_anggota_deposit'");
+                          $data_rekening_anggota = mysqli_fetch_array($rekening_anggota);
+                          $jenis_rekening_anggota = $data_rekening_anggota['jenis_rekening'];
+                      }
 
                       $rekening_admin_deposit = mysqli_query($koneksi, "SELECT * FROM rekening_admin WHERE id_rekening_admin = '$id_rekening_admin_deposit'");
                       $data_rekening_admin_deposit = mysqli_fetch_array($rekening_admin_deposit);
@@ -77,6 +83,8 @@
                           echo 'Bank';
                         } else if ($kategori_rekening_deposit == "emoney") {
                           echo 'E-Money';
+                        } else if ($kategori_rekening_deposit == "qris") {
+                          echo 'QRIS';
                         } else {
                           echo 'Pulsa';
                         }

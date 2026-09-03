@@ -89,7 +89,7 @@ CREATE TABLE `deposit` (
   `id_deposit` int(11) NOT NULL,
   `id_akun_deposit` int(11) NOT NULL,
   `kode_deposit` varchar(255) NOT NULL,
-  `kategori_rekening_deposit` enum('bank','emoney','pulsa') NOT NULL,
+  `kategori_rekening_deposit` enum('bank','emoney','pulsa','qris') NOT NULL,
   `id_rekening_anggota_deposit` int(11) NOT NULL,
   `id_rekening_admin_deposit` int(11) NOT NULL,
   `jumlah_deposit` varchar(255) NOT NULL,
@@ -378,7 +378,7 @@ CREATE TABLE `provider` (
 
 CREATE TABLE `rekening` (
   `id_rekening` int(11) NOT NULL,
-  `kategori_rekening` enum('bank','emoney','pulsa') NOT NULL,
+  `kategori_rekening` enum('bank','emoney','pulsa','qris') NOT NULL,
   `jenis_rekening` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -399,7 +399,8 @@ INSERT INTO `rekening` (`id_rekening`, `kategori_rekening`, `jenis_rekening`) VA
 (10, 'emoney', 'GOPAY'),
 (11, 'pulsa', 'TELKOMSEL'),
 (12, 'pulsa', 'AXIS'),
-(13, 'pulsa', 'XL');
+(13, 'pulsa', 'XL'),
+(14, 'qris', 'QRIS');
 
 -- --------------------------------------------------------
 
@@ -409,7 +410,7 @@ INSERT INTO `rekening` (`id_rekening`, `kategori_rekening`, `jenis_rekening`) VA
 
 CREATE TABLE `rekening_admin` (
   `id_rekening_admin` int(11) NOT NULL,
-  `kategori_rekening_admin` enum('bank','emoney','pulsa') NOT NULL,
+  `kategori_rekening_admin` enum('bank','emoney','pulsa','qris') NOT NULL,
   `id_rekening_rekening_admin` int(11) NOT NULL,
   `nama_rekening_admin` varchar(255) NOT NULL,
   `nomor_rekening_admin` varchar(255) NOT NULL
@@ -422,7 +423,8 @@ CREATE TABLE `rekening_admin` (
 INSERT INTO `rekening_admin` (`id_rekening_admin`, `kategori_rekening_admin`, `id_rekening_rekening_admin`, `nama_rekening_admin`, `nomor_rekening_admin`) VALUES
 (29, 'bank', 1, 'Adminmaster BCA', '00000000'),
 (30, 'bank', 3, 'Adminmaster CIMB', '00000000'),
-(31, 'emoney', 8, 'Adminmaster DANA', '00000000');
+(31, 'emoney', 8, 'Adminmaster DANA', '00000000'),
+(32, 'qris',  14[, 'JONATAN777 QRIS', 'ALTOMEDIA');
 
 -- --------------------------------------------------------
 
@@ -433,7 +435,7 @@ INSERT INTO `rekening_admin` (`id_rekening_admin`, `kategori_rekening_admin`, `i
 CREATE TABLE `rekening_anggota` (
   `id_rekening_anggota` int(11) NOT NULL,
   `id_akun_rekening_anggota` int(11) NOT NULL,
-  `kategori_rekening_anggota` enum('bank','emoney','pulsa') NOT NULL,
+  `kategori_rekening_anggota` enum('bank','emoney','pulsa','qris') NOT NULL,
   `id_rekening_rekening_anggota` int(11) NOT NULL,
   `nama_rekening_anggota` varchar(255) NOT NULL,
   `nomor_rekening_anggota` varchar(255) NOT NULL
@@ -597,7 +599,7 @@ CREATE TABLE `withdraw` (
   `id_withdraw` int(11) NOT NULL,
   `id_akun_withdraw` int(11) NOT NULL,
   `kode_withdraw` varchar(255) NOT NULL,
-  `kategori_rekening_withdraw` enum('bank','emoney','pulsa') NOT NULL,
+  `kategori_rekening_withdraw` enum('bank','emoney','pulsa','qris') NOT NULL,
   `id_rekening_anggota_withdraw` int(11) NOT NULL,
   `jumlah_withdraw` varchar(255) NOT NULL,
   `tanggal_withdraw` datetime NOT NULL,
