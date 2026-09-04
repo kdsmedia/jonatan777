@@ -1,10 +1,15 @@
 <?php
 error_reporting(0);
 
+if (empty($_SESSION['id_akun'])) {
+    echo '<script>window.history.go(-2);</script>';
+    exit;
+}
+
 $kd = "DP-";
 
 if (isset($_POST['deposit'])) {
-    $id_akun_deposit = $id_akun_masuk;
+    $id_akun_deposit = !empty($_SESSION['id_akun']) ? $_SESSION['id_akun'] : 0;
     $kode_deposit = $kd.(generatorRangkaianAcak(10));
     $kategori_rekening_deposit = "qris";
     $id_rekening_anggota_deposit = 0;
