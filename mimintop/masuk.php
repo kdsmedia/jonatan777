@@ -51,8 +51,8 @@
     <title>Admin Panel - <?php echo $isi1_judul_website; ?></title>
     <base href="<?php echo $alamat_website_admin; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Aplikasi Posyandu Berbasis Website" name="description" />
-    <meta content="MCP" name="author" />
+    <meta content="Admin Panel JONATAN777" name="description" />
+    <meta content="JONATAN777" name="author" />
     <!-- App favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/<?php echo $isi1_favicon; ?>">
     <!-- Layout config Js -->

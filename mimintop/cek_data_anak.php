@@ -14,13 +14,13 @@
     <meta charset="utf-8" />
     <?php
       if ($_GET['halaman'] == "dasbor") {
-        echo '<title>Dasbor | Admin ePOSYANDU</title>';
+        echo '<title>Dasbor | Admin JONATAN777</title>';
       }
     ?>
     <base href="<?php echo $alamat_website.'admin/'; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Aplikasi Posyandu Berbasis Website" name="description" />
-    <meta content="MCP" name="author" />
+    <meta content="Admin Panel JONATAN777" name="description" />
+    <meta content="JONATAN777" name="author" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- Layout config Js -->
@@ -360,11 +360,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6">
-                Versi : 2.0 - <?php echo date("Y").' &copy; <a href="https://idmasgi.com/" target="_blank">idmasgi.com</a>'; ?>
+                Versi : 2.0 - <?php echo date("Y").' &copy; <a href="<?php echo $alamat_website; ?>" target="_blank">JONATAN777</a>'; ?>
               </div>
               <div class="col-sm-6">
                 <div class="text-sm-end d-none d-sm-block">
-                  Dikembangkan oleh : <a href="https://instagram.com/id.masgi" target="_blank">Masgi</a>
+                  Dikembangkan oleh : <a href="$alamat_website">JONATAN777</a>
                 </div>
               </div>
             </div>
