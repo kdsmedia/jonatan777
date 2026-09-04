@@ -3,8 +3,7 @@
     $nama_lengkap_akun = $_POST['nama_lengkap_akun'];
     $email_akun = $_POST['email_akun'];
     $telepon_akun = $_POST['telepon_akun'];
-    $whatsapp_akun = $_POST['whatsapp_akun'];
-    $profil_saya = mysqli_query($koneksi, "UPDATE akun SET nama_lengkap_akun = '$nama_lengkap_akun', email_akun = '$email_akun', telepon_akun = '$telepon_akun', whatsapp_akun = '$whatsapp_akun' WHERE id_akun = '$id_akun_masuk'");
+    $profil_saya = mysqli_query($koneksi, "UPDATE akun SET nama_lengkap_akun = '$nama_lengkap_akun', email_akun = '$email_akun', telepon_akun = '$telepon_akun' WHERE id_akun = '$id_akun_masuk'");
     if ($profil_saya) {
       echo '
         <script>
@@ -55,10 +54,6 @@
       <div class="mb-3">
         <label class="form-label" style="font-size: 14px;">No. Kontak <span style="color: #FF0000;">*</span></label>
         <input type="text" name="telepon_akun" class="form-control form-control-sm rounded-0" value="<?php echo $telepon_akun_masuk; ?>" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label" style="font-size: 14px;">WhatsApp <span style="color: #FF0000;">*</span></label>
-        <input type="text" name="whatsapp_akun" class="form-control form-control-sm rounded-0" value="<?php echo $whatsapp_akun_masuk; ?>" required>
       </div>
       <button type="submit" name="profil_saya" class="btn btn-utama text-uppercase rounded-pill my-3 w-100">Simpan Data Profil Saya</button>
     </div>

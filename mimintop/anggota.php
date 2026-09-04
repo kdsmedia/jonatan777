@@ -29,7 +29,6 @@
                     <th scope="col">Kata Sandi</th>
                     <th scope="col">Email</th>
                     <th scope="col">Telepon</th>
-                    <th scope="col">WhatsApp</th>
                     <th scope="col">Kode Referensi</th>
                     <th scope="col">Status Akun</th>
                     <th scope="col">Aksi</th>
@@ -45,7 +44,6 @@
                       $kata_sandi_anggota = $data_anggota['kata_sandi_akun'];
                       $email_anggota = $data_anggota['email_akun'];
                       $telepon_anggota = $data_anggota['telepon_akun'];
-                      $whatsapp_anggota = $data_anggota['whatsapp_akun'];
                       $kode_referensi_anggota = $data_anggota['kode_referensi_akun'];
                       $status_anggota = $data_anggota['status_akun'];
                   ?>
@@ -55,7 +53,6 @@
                     <td><?php echo $kata_sandi_anggota; ?></td>
                     <td><?php echo $email_anggota; ?></td>
                     <td><?php echo $telepon_anggota; ?></td>
-                    <td><?php echo $whatsapp_anggota; ?></td>
                     <td><?php echo $kode_referensi_anggota; ?></td>
                     <td>
                       <?php
@@ -118,10 +115,6 @@
                             <div class="mb-2">
                               <label class="form-label">Telepon</label>
                               <input type="text" name="telepon_anggota" class="form-control" value="<?php echo $telepon_anggota; ?>" autocomplete="off" required>
-                            </div>
-                            <div class="mb-2">
-                              <label class="form-label">WhatsApp</label>
-                              <input type="text" name="whatsapp_anggota" class="form-control" value="<?php echo $whatsapp_anggota; ?>" autocomplete="off" required>
                             </div>
                             <div class="mb-2">
                               <label class="form-label">Kode Referensi</label>
@@ -229,10 +222,6 @@
           <div class="mb-2">
             <label class="form-label">Telepon</label>
             <input type="text" name="telepon_anggota" class="form-control hanya-angka" placeholder="Telepon" autocomplete="off" required>
-          </div>
-          <div class="mb-2">
-            <label class="form-label">WhatsApp</label>
-            <input type="text" name="whatsapp_anggota" class="form-control hanya-angka" placeholder="WhatsApp" autocomplete="off" required>
           </div>
           <div class="mb-2">
             <label class="form-label">Kode Referensi</label>

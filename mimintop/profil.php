@@ -39,10 +39,6 @@
                     <label class="form-label">Telepon</label>
                     <input type="text" name="telepon_akun" class="form-control" value="<?php echo $telepon_akun_masuk; ?>" autocomplete="off" required>
                   </div>
-                  <div class="col-md-4">
-                    <label class="form-label">WhatsApp</label>
-                    <input type="text" name="whatsapp_akun" class="form-control" value="<?php echo $whatsapp_akun_masuk; ?>" autocomplete="off" required>
-                  </div>
                   <div class="col-12">
                     <button type="submit" name="ubah_profil" class="d-flex justify-content-center align-items-center btn btn-primary ms-auto">
                       <i class="ri-save-3-line me-1"></i>

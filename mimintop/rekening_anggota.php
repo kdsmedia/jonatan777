@@ -50,7 +50,6 @@
                       $kata_sandi_anggota = $data_anggota['kata_sandi_akun'];
                       $email_anggota = $data_anggota['email_akun'];
                       $telepon_anggota = $data_anggota['telepon_akun'];
-                      $whatsapp_anggota = $data_anggota['whatsapp_akun'];
                       $kode_referensi_anggota = $data_anggota['kode_referensi_akun'];
                       $status_anggota = $data_anggota['status_akun'];
 
@@ -121,7 +120,6 @@
                                     $kata_sandi_anggota = $data_anggota['kata_sandi_akun'];
                                     $email_anggota = $data_anggota['email_akun'];
                                     $telepon_anggota = $data_anggota['telepon_akun'];
-                                    $whatsapp_anggota = $data_anggota['whatsapp_akun'];
                                     $kode_referensi_anggota = $data_anggota['kode_referensi_akun'];
                                     $status_anggota = $data_anggota['status_akun'];
                                     echo '<option value="'.$id_anggota.'">'.$nama_lengkap_anggota.'</option>';
@@ -258,7 +256,6 @@
                   $kata_sandi_anggota = $data_anggota['kata_sandi_akun'];
                   $email_anggota = $data_anggota['email_akun'];
                   $telepon_anggota = $data_anggota['telepon_akun'];
-                  $whatsapp_anggota = $data_anggota['whatsapp_akun'];
                   $kode_referensi_anggota = $data_anggota['kode_referensi_akun'];
                   $status_anggota = $data_anggota['status_akun'];
                   echo '<option value="'.$id_anggota.'">'.$nama_lengkap_anggota.'</option>';

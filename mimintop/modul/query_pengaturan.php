@@ -18,13 +18,6 @@
   $isi1_twitter = $data_twitter['isi1_pengaturan'];
   $isi2_twitter = $data_twitter['isi2_pengaturan'];
 
-  $query_whatsapp = mysqli_query($koneksi, "SELECT * FROM pengaturan WHERE nama_pengaturan = 'whatsapp'");
-  $data_whatsapp = mysqli_fetch_array($query_whatsapp);
-  $id_whatsapp = $data_whatsapp['id_pengaturan'];
-  $isi1_whatsapp = $data_whatsapp['isi1_pengaturan'];
-  $isi2_whatsapp = $data_whatsapp['isi2_pengaturan'];
-  $isi3_whatsapp = $data_whatsapp['isi3_pengaturan'];
-
   $query_instagram = mysqli_query($koneksi, "SELECT * FROM pengaturan WHERE nama_pengaturan = 'instagram'");
   $data_instagram = mysqli_fetch_array($query_instagram);
   $id_instagram = $data_instagram['id_pengaturan'];

@@ -18,7 +18,6 @@
     $kata_sandi_akun_masuk = $data_akun_masuk['kata_sandi_akun'];
     $email_akun_masuk = $data_akun_masuk['email_akun'];
     $telepon_akun_masuk = $data_akun_masuk['telepon_akun'];
-    $whatsapp_akun_masuk = $data_akun_masuk['whatsapp_akun'];
     $kode_referensi_akun_masuk = $data_akun_masuk['kode_referensi_akun'];
     $level_akun_masuk = $data_akun_masuk['level_akun'];
     $status_akun_masuk = $data_akun_masuk['status_akun'];
@@ -455,7 +454,6 @@
             $kata_sandi_anggota = $_POST['kata_sandi_anggota'];
             $email_anggota = $_POST['email_anggota'];
             $telepon_anggota = $_POST['telepon_anggota'];
-            $whatsapp_anggota = $_POST['whatsapp_anggota'];
             $kode_referensi_anggota = $_POST['kode_referensi_anggota'];
             $cek_nama_pengguna_anggota = mysqli_query($koneksi, "SELECT * FROM akun WHERE nama_pengguna_akun = '$nama_pengguna_anggota'");
             $jumlah_nama_pengguna_anggota = mysqli_num_rows($cek_nama_pengguna_anggota);
@@ -477,7 +475,7 @@
     </script>
     <?php
             } else {
-              $tambah_data = mysqli_query($koneksi, "INSERT INTO akun (nama_lengkap_akun, nama_pengguna_akun, kata_sandi_akun, email_akun, telepon_akun, whatsapp_akun, kode_referensi_akun) VALUES ('$nama_lengkap_anggota', '$nama_pengguna_anggota', '$kata_sandi_anggota', '$email_anggota', '$telepon_anggota', '$whatsapp_anggota', '$kode_referensi_anggota')");
+              $tambah_data = mysqli_query($koneksi, "INSERT INTO akun (nama_lengkap_akun, nama_pengguna_akun, kata_sandi_akun, email_akun, telepon_akun, kode_referensi_akun) VALUES ('$nama_lengkap_anggota', '$nama_pengguna_anggota', '$kata_sandi_anggota', '$email_anggota', '$telepon_anggota', '$kode_referensi_anggota')");
               if ($tambah_data) {
     ?>
     <script>
@@ -513,7 +511,6 @@
             $kata_sandi_anggota = $_POST['kata_sandi_anggota'];
             $email_anggota = $_POST['email_anggota'];
             $telepon_anggota = $_POST['telepon_anggota'];
-            $whatsapp_anggota = $_POST['whatsapp_anggota'];
             $kode_referensi_anggota = $_POST['kode_referensi_anggota'];
             $status_anggota = $_POST['status_anggota'];
             $cek_nama_pengguna_anggota = mysqli_query($koneksi, "SELECT * FROM akun WHERE NOT id_akun = '$id_anggota' AND nama_pengguna_akun = '$nama_pengguna_anggota'");
@@ -536,7 +533,7 @@
     </script>
     <?php
             } else {
-              $ubah_data = mysqli_query($koneksi, "UPDATE akun SET nama_lengkap_akun = '$nama_lengkap_anggota', nama_pengguna_akun = '$nama_pengguna_anggota', kata_sandi_akun = '$kata_sandi_anggota', email_akun = '$email_anggota', telepon_akun = '$telepon_anggota', whatsapp_akun = '$whatsapp_anggota', kode_referensi_akun = '$kode_referensi_anggota', status_akun = '$status_anggota' WHERE id_akun = '$id_anggota'");
+              $ubah_data = mysqli_query($koneksi, "UPDATE akun SET nama_lengkap_akun = '$nama_lengkap_anggota', nama_pengguna_akun = '$nama_pengguna_anggota', kata_sandi_akun = '$kata_sandi_anggota', email_akun = '$email_anggota', telepon_akun = '$telepon_anggota', kode_referensi_akun = '$kode_referensi_anggota', status_akun = '$status_anggota' WHERE id_akun = '$id_anggota'");
               if ($ubah_data) {
     ?>
     <script>
@@ -1987,7 +1984,6 @@
             $kata_sandi_akun = $_POST['kata_sandi_akun'];
             $email_akun = $_POST['email_akun'];
             $telepon_akun = $_POST['telepon_akun'];
-            $whatsapp_akun = $_POST['whatsapp_akun'];
             $cek_nama_pengguna_akun = mysqli_query($koneksi, "SELECT * FROM akun WHERE NOT id_akun = '$id_akun_masuk' AND nama_pengguna_akun = '$nama_pengguna_akun'");
             $jumlah_nama_pengguna_akun = mysqli_num_rows($cek_nama_pengguna_akun);
             if ($jumlah_nama_pengguna_akun > 0) {
@@ -2008,7 +2004,7 @@
     </script>
     <?php
             } else {
-              $ubah_profil = mysqli_query($koneksi, "UPDATE akun SET nama_lengkap_akun = '$nama_lengkap_akun', nama_pengguna_akun = '$nama_pengguna_akun', kata_sandi_akun = '$kata_sandi_akun', email_akun = '$email_akun', telepon_akun = '$telepon_akun', whatsapp_akun = '$whatsapp_akun' WHERE id_akun = '$id_akun_masuk'");
+              $ubah_profil = mysqli_query($koneksi, "UPDATE akun SET nama_lengkap_akun = '$nama_lengkap_akun', nama_pengguna_akun = '$nama_pengguna_akun', kata_sandi_akun = '$kata_sandi_akun', email_akun = '$email_akun', telepon_akun = '$telepon_akun' WHERE id_akun = '$id_akun_masuk'");
               if ($ubah_profil) {
     ?>
     <script>
@@ -2327,75 +2323,6 @@
               $lokasi_simpan = "assets/images/".$file_input;
               if (move_uploaded_file($tmp_file, $lokasi_simpan)) {
                 $ubah_data = mysqli_query($koneksi, "UPDATE pengaturan SET isi1_pengaturan = '$file_input', isi2_pengaturan = '$isi2_pengaturan', isi3_pengaturan = '$isi3_pengaturan' WHERE nama_pengaturan = 'livechat'");
-                if ($ubah_data) {
-    ?>
-    <script>
-      $(document).ready(function () {
-        let timerInterval
-        Swal.fire({
-          icon: 'success',
-          html: 'Berhasil ubah data, tunggu sebentar',
-          timer: 1500,
-          timerProgressBar: true,
-          didOpen: () => {
-            Swal.showLoading()
-          },
-          willClose: () => {
-            clearInterval(timerInterval)
-          }
-        }).then((result) => {
-          if (result.dismiss === Swal.DismissReason.timer) {
-            window.location.replace("<?php echo $alamat_website_admin; ?>pengaturan");
-          }
-        });
-      });
-    </script>
-    <?php
-                } else {
-                  echo "Proses Gagal<br>Error : ".$ubah_data."<br>".mysqli_error($koneksi);
-                }
-              } else {
-    ?>
-    <script>
-      $(document).ready(function () {
-        Swal.fire({
-          icon: 'error',
-          html: 'Ukuran gambar terlalu besar!',
-          confirmButtonText: 'Oke',
-          confirmButtonColor: '#405189'
-        });
-      });
-    </script>
-    <?php
-              }
-            }
-          } else if (isset($_POST['ubah_whatsapp'])) {
-            $isi2_pengaturan = $_POST['nomor_whatsapp'];
-            $isi3_pengaturan = $_POST['text_whatsapp'];
-            $random = rand(1000000000, 9999999999);
-            $tmp_file = $_FILES['gambar_whatsapp']['tmp_name'];
-            $nama_file = $_FILES['gambar_whatsapp']['name'];
-            $format =  array('png', 'PNG', 'jpg', 'JPG', 'jpeg', 'JPEG', 'svg', 'SVG');
-            $extensi = pathinfo($nama_file, PATHINFO_EXTENSION);
-            if (!in_array($extensi, $format)) {
-    ?>
-    <script>
-      $(document).ready(function () {
-        Swal.fire({
-          icon: 'error',
-          html: 'Format gambar salah, format gambar harus <span class="fw-bold text-primary">PNG</span>, <span class="fw-bold text-primary">JPG</span> atau <span class="fw-bold text-primary">JPEG</span>!',
-          confirmButtonText: 'Oke',
-          confirmButtonColor: '#405189'
-        });
-      });
-    </script>
-    <?php
-            } else {
-              $file = strtolower(str_replace(" ", "_", $nama_file));
-              $file_input = $random.'_'.$file;
-              $lokasi_simpan = "assets/images/".$file_input;
-              if (move_uploaded_file($tmp_file, $lokasi_simpan)) {
-                $ubah_data = mysqli_query($koneksi, "UPDATE pengaturan SET isi1_pengaturan = '$file_input', isi2_pengaturan = '$isi2_pengaturan', isi3_pengaturan = '$isi3_pengaturan' WHERE nama_pengaturan = 'whatsapp'");
                 if ($ubah_data) {
     ?>
     <script>

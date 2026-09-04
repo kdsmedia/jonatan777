@@ -148,36 +148,6 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Hub Kami (WhatsApp)</h5>
-              <form method="post" enctype="multipart/form-data">
-                <div class="mb-2 text-center">
-                  <img src="assets/images/<?php echo $isi1_whatsapp; ?>" class="img-fluid">
-                </div>
-                <div class="mb-2">
-                  <label class="form-label">Gambar</label>
-                  <input type="file" name="gambar_whatsapp" class="form-control">
-                </div>
-                <div class="mb-2">
-                  <label class="form-label">Nomor</label>
-                  <input type="text" name="nomor_whatsapp" class="form-control" value="<?php echo $isi2_whatsapp; ?>" autocomplete="off" required>
-                </div>
-                <div class="mb-2">
-                  <label class="form-label">Text</label>
-                  <input type="text" name="text_whatsapp" class="form-control" value="<?php echo $isi3_whatsapp; ?>" autocomplete="off" required>
-                </div>
-                <div class="mb-2">
-                  <button type="submit" name="ubah_whatsapp" class="d-flex justify-content-center align-items-center btn btn-primary ms-auto">
-                    <i class="ri-save-3-line me-1"></i>
-                    Simpan
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">

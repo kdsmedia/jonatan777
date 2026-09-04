@@ -100,10 +100,6 @@
         <label class="form-label" style="font-size: 14px;">No. Kontak <span style="color: #FF0000;">*</span></label>
         <input type="text" name="telepon_akun" class="form-control form-control-sm rounded-0" placeholder="Nomor Telepon Anda" required>
       </div>
-      <div class="mb-3">
-        <label class="form-label" style="font-size: 14px;">WhatsApp <span style="color: #FF0000;">*</span></label>
-        <input type="text" name="whatsapp_akun" class="form-control form-control-sm rounded-0" placeholder="WhatsApp No." required>
-      </div>
     </div>
     <div class="col-10 text-center btn-utama p-2">
       <span style="font-size: 18px;">Informasi Pembayaran</span>
