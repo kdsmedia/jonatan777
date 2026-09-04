@@ -763,7 +763,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="<?php echo $alamat_website; ?>" class="d-flex flex-column align-items-center text-decoration-none">
+          <a href="https://play.google.com/store/apps/details?id=com.altomedia.jonatan777" target="_blank" class="d-flex flex-column align-items-center text-decoration-none">
             <img src="./assets/images/beranda/mobile-app.svg" alt="Home" width="25" height="25">
             <span class="text-utama">Unduh</span>
           </a>
@@ -1248,7 +1248,6 @@
 
 <div id="customGif">
 <a href="<?php echo $alamat_website; ?>rtp.php" target="_blank" rel="nofollow"><img src="./assets/images/beranda/rtp.gif" width="75" height="75" border="0" alt="RTP Gif"></a>
-<a href="https://wa.me/<?php echo $isi2_whatsapp.'?text='.$isi3_whatsapp; ?>" target="_blank"><img src="./assets/images/beranda/logowhatsapp.png" width="75" height="75" border="0" class="WaButton" alt="Whatsapp" style="width:65px;height:65px"></a>
 <a href="<?php echo $isi3_livechat; ?>" target="_blank" rel="nofollow"><img src="./assets/images/beranda/image.png" width="75" height="75" border="0" alt="Livechat Alternatif"></a></div>
 
 
