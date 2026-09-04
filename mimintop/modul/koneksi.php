@@ -1,14 +1,14 @@
 <?php
   date_default_timezone_set("Asia/Jakarta");
   $nama_website = 'JONATAN777';
-  $alamat_website = 'https://jonatan777.gamer.free/'; //diakhiri dengan slash /
-  $alamat_website_admin = 'https://jonatan777.gamer.free/mimintop/'; //diakhiri dengan slash /
+  $alamat_website = '/'; //diakhiri dengan slash /
+  $alamat_website_admin = '/mimintop/'; //diakhiri dengan slash /
   $qris_link = '';
   
-  $host = "sql313.infinityfree.com";
-  $username = "if0_42823199";
-  $password = "Kdsmedia123";
-  $database = "if0_42823199_jonatan777";
+  $host = getenv('DB_HOST') ?: 'localhost';
+  $username = getenv('DB_USER') ?: 'root';
+  $password = getenv('DB_PASS') ?: '';
+  $database = getenv('DB_NAME') ?: 'jonatan777';
   $koneksi = mysqli_connect($host, $username, $password, $database);
   if (!$koneksi) {
     echo "Kesalahan : Tidak dapat terhubung ke database." . PHP_EOL;

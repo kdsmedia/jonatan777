@@ -424,7 +424,7 @@ INSERT INTO `rekening_admin` (`id_rekening_admin`, `kategori_rekening_admin`, `i
 (29, 'bank', 1, 'Adminmaster BCA', '00000000'),
 (30, 'bank', 3, 'Adminmaster CIMB', '00000000'),
 (31, 'emoney', 8, 'Adminmaster DANA', '00000000'),
-(32, 'qris',  14[, 'JONATAN777 QRIS', 'ALTOMEDIA');
+(32, 'qris',  14, 'JONATAN777 QRIS', 'ALTOMEDIA');
 
 -- --------------------------------------------------------
 
