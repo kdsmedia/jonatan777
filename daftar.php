@@ -7,7 +7,7 @@
   <title><?php echo $nama_website; ?></title>
   <meta name="description" content="<?php echo $isi1_judul_website; ?>">
   <meta name="keywords" content="slot">
-  <meta property="og:title" content="<?php echo nama_website; ?>"/>
+  <meta property="og:title" content="<?php echo $nama_website; ?>"/>
   <meta property="og:description" content="<?php echo $isi1_judul_website; ?>" />
   <meta property="og:url" content="<?php echo $alamat_website; ?>" />
   <meta name="resource-type" content="document" />
@@ -153,7 +153,7 @@
       </div>
       <button type="submit" name="daftar" class="btn btn-utama my-3 w-100 sidebar-daftar">Daftar</button>
       <div class="text-center">
-        Dengan meng-klik tombol DAFTAR, saya menyatakan bahwa saya berumur diatas 18 tahun dan telah membaca dan menyetujui syarat & ketentun PANDA138.
+        Dengan meng-klik tombol DAFTAR, saya menyatakan bahwa saya berumur diatas 18 tahun dan telah membaca dan menyetujui syarat & ketentuan JONATAN777.
       </div>
     </div>
   </div>

@@ -12,8 +12,9 @@ $kd = "WD-";
         window.location.replace("'.$alamat_website.'withdraw/bank");
       </script>
     ';
+    exit;
   }
-  if ($_POST['jumlah_withdraw']) {
+  if (isset($_POST['jumlah_withdraw']) && $_POST['jumlah_withdraw']) {
     $id_akun_withdraw = $id_akun_masuk;
     $kode_withdraw = $kd.(generatorRangkaianAcak(10));
     $kategori_rekening_withdraw = $kategori_rekening_aktif;

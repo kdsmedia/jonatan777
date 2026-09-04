@@ -568,7 +568,12 @@
   <div class="container-fluid px-0" style="padding: 5rem 0;">
     <?php
       include_once "mimintop/modul/sidebar.php";
- 
+
+      $halaman_login_diperlukan = array("deposit", "deposit/qris", "withdraw", "rekening", "riwayat_deposit", "riwayat_withdraw", "riwayat_transaksi", "akun_saya", "ubah_kata_sandi", "profil_saya");
+      if (isset($_GET['halaman']) && in_array($_GET['halaman'], $halaman_login_diperlukan) && !isset($_SESSION['id_akun'])) {
+        echo '<script>window.location.replace("'.$alamat_website.'masuk");</script>';
+        exit;
+      }
 
       if (isset($_GET['halaman'])) {
         if ($_GET['halaman'] == "beranda") {
@@ -601,6 +606,8 @@
           include_once "riwayat_deposit.php";
         } else if ($_GET['halaman'] == "riwayat_withdraw") {
           include_once "riwayat_withdraw.php";
+        } else if ($_GET['halaman'] == "riwayat_transaksi") {
+          include_once "riwayat_transaksi.php";
         } else if ($_GET['halaman'] == "akun_saya") {
           include_once "akun_saya.php";
         } else if ($_GET['halaman'] == "ubah_kata_sandi") {
@@ -630,14 +637,6 @@
               <i class="ri-twitter-fill" style="font-size: 22px;"></i>
             </div>
             <span style="font-size: 14px; color: #6F6D6D;"><?php echo $isi1_twitter; ?></span>
-          </a>
-        </div>
-        <div class="col-6">
-          <a href="https://wa.me/<?php echo $isi2_whatsapp.'?text='.$isi3_whatsapp; ?>" class="text-decoration-none d-flex align-items-center">
-            <div class="d-flex align-items-center justify-content-center rounded-circle btn-utama" style="width: 36px; height: 36px; color: #000000; margin-right: 10px;">
-              <i class="ri-whatsapp-line" style="font-size: 22px;"></i>
-            </div>
-            <span style="font-size: 14px; color: #6F6D6D;"><?php echo $isi2_whatsapp; ?></span>
           </a>
         </div>
         <div class="col-6">
@@ -764,7 +763,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="<?php echo $alamat_website; ?>" class="d-flex flex-column align-items-center text-decoration-none">
+          <a href="https://play.google.com/store/apps/details?id=com.altomedia.jonatan777" target="_blank" class="d-flex flex-column align-items-center text-decoration-none">
             <img src="./assets/images/beranda/mobile-app.svg" alt="Home" width="25" height="25">
             <span class="text-utama">Unduh</span>
           </a>
@@ -1249,7 +1248,6 @@
 
 <div id="customGif">
 <a href="<?php echo $alamat_website; ?>rtp.php" target="_blank" rel="nofollow"><img src="./assets/images/beranda/rtp.gif" width="75" height="75" border="0" alt="RTP Gif"></a>
-<a href="https://wa.me/<?php echo $isi2_whatsapp.'?text='.$isi3_whatsapp; ?>" target="_blank"><img src="./assets/images/beranda/logowhatsapp.png" width="75" height="75" border="0" class="WaButton" alt="Whatsapp" style="width:65px;height:65px"></a>
 <a href="<?php echo $isi3_livechat; ?>" target="_blank" rel="nofollow"><img src="./assets/images/beranda/image.png" width="75" height="75" border="0" alt="Livechat Alternatif"></a></div>
 
 

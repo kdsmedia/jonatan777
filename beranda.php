@@ -2017,7 +2017,7 @@ Togel
             <div class="download-apk-section android">
                 <span>Android</span>
                 <picture><source srcset="./assets/images/beranda/android-logo.webp?v=20230823-2" type="image/webp"><source srcset="./assets/images/beranda/android-logo.png?v=20230823-2" type="image/png"><img alt="Download Android APK" class="img-responsive" loading="lazy" src="./assets/images/beranda/android-logo.png?v=20230823-2"></picture>
-                    <a href="https://apk-bank.s3.ap-southeast-1.amazonaws.com/rdp.apk">Unduh</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.altomedia.jonatan777" target="_blank">Unduh</a>
                 </div>
             </div>
             <div id="apk_install_guide_modal" class="modal download-popup-modal" role="dialog" data-title="Panduan Instalasi" aria-hidden="false">

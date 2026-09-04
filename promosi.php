@@ -7,18 +7,18 @@
   <title><?php echo $isi1_judul_website; ?></title>
   <base href="<?php echo $alamat_website; ?>">
   <meta content="Daftar Situs Agen Judi Online Terpercaya, Bandar Taruhan Bola, Game Slot terbaik, Slot gacor, Togel Online, Live Casino bisa Deposit Via Pulsa, dan OVO" name=description>
-  <meta content=PANDA138,slotonline,casinogameonline,situsjudislotonline,judislotonline,agenslotPANDA138,pokeronline,bolagameonline,idnpoker,judibolaonline,gameslotonline,agenslotonline,agentpokerterbaik,agenslotindoonline,websitepokerterpercaya name=keywords>
-<meta name="description" content="PANDA138 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 10 Ribu Rupiah." />
-<meta name="keywords" content=" PANDA138 Slot pulsa, slot pulsa tanpa potongan, slot deposit pulsa, slot online, situs judi slot online terpercaya" />
-    <meta name="twitter:title" content="PANDA138 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
-   <meta name="twitter:description" content="PANDA138 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 10 Ribu Rupiah.">
-    <meta property="og:title" content="PANDA138 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
-    <meta property="og:description" content="PANDA138 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 10 Ribu Rupiah.">
+  <meta content=JONATAN777,slotonline,casinogameonline,situsjudislotonline,judislotonline,agenslotJONATAN777,pokeronline,bolagameonline,idnpoker,judibolaonline,gameslotonline,agenslotonline,agentpokerterbaik,agenslotindoonline,websitepokerterpercaya name=keywords>
+<meta name="description" content="JONATAN777 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 10 Ribu Rupiah." />
+<meta name="keywords" content=" JONATAN777 Slot pulsa, slot pulsa tanpa potongan, slot deposit pulsa, slot online, situs judi slot online terpercaya" />
+    <meta name="twitter:title" content="JONATAN777 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
+   <meta name="twitter:description" content="JONATAN777 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 10 Ribu Rupiah.">
+    <meta property="og:title" content="JONATAN777 - Situs Bandar Judi Live Slot Online Terbaik Di Indonesia">
+    <meta property="og:description" content="JONATAN777 adalah agen judi slot online terpercaya di Indonesia dan gacor. Daftar Sekarang untuk bermain slot deposit pulsa tanpa potongan 10 Ribu Rupiah.">
     <meta name="robots" content="INDEX, FOLLOW">
     <meta name="Content-Type" content="text/html">
     <meta name="twitter:card" content="summary">
     <meta name="og:type" content="website">
-    <meta name="author" content="PANDA138">
+    <meta name="author" content="JONATAN777">
 </head>
 </html>
 

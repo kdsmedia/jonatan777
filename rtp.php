@@ -49803,9 +49803,6 @@
     </div>
     
     <div class="p-fixed">
-      <a id="wa-src" href="https://wa.me/6281317088150">
-        <img class="img-wa" src="./assets/images/social/circle/whatsapp.png" />
-      </a>
     </div>
     
     <script>
