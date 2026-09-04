@@ -640,14 +640,6 @@
           </a>
         </div>
         <div class="col-6">
-          <a href="https://wa.me/<?php echo $isi2_whatsapp.'?text='.$isi3_whatsapp; ?>" class="text-decoration-none d-flex align-items-center">
-            <div class="d-flex align-items-center justify-content-center rounded-circle btn-utama" style="width: 36px; height: 36px; color: #000000; margin-right: 10px;">
-              <i class="ri-whatsapp-line" style="font-size: 22px;"></i>
-            </div>
-            <span style="font-size: 14px; color: #6F6D6D;"><?php echo $isi2_whatsapp; ?></span>
-          </a>
-        </div>
-        <div class="col-6">
           <a href="<?php echo $isi2_instagram; ?>" class="text-decoration-none d-flex align-items-center">
             <div class="d-flex align-items-center justify-content-center rounded-circle btn-utama" style="width: 36px; height: 36px; color: #000000; margin-right: 10px;">
               <i class="ri-instagram-line" style="font-size: 22px;"></i>
