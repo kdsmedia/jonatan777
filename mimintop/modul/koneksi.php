@@ -1,8 +1,8 @@
 <?php
   date_default_timezone_set("Asia/Jakarta");
   $nama_website = 'JONATAN777';
-  $alamat_website = '/'; //diakhiri dengan slash /
-  $alamat_website_admin = '/mimintop/'; //diakhiri dengan slash /
+  $alamat_website = getenv('ALAMAT_WEBSITE') ?: '/'; //diakhiri dengan slash /
+  $alamat_website_admin = getenv('ALAMAT_WEBSITE_ADMIN') ?: '/mimintop/'; //diakhiri dengan slash /
   $qris_link = '';
   
   $host = getenv('DB_HOST') ?: 'localhost';

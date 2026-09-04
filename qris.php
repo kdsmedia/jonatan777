@@ -112,11 +112,11 @@ if (isset($_POST['deposit'])) {
     for (let i = 0; i < data.length; i++) {
       crc ^= data.charCodeAt(i) << 8;
       for (let j = 0; j < 8; j++) {
-        if ((crc &anganese 0x8000) !== 0) crc = (crc << 1) ^ 0x1021;
+        if ((crc & 0x8000) !== 0) crc = (crc << 1) ^ 0x1021;
         else crc <<= 1;
       }
     }
-    return (crc &anganese 0xFFFF).toString(16).toUpperCase().padStart(4,, '0');
+    return (crc & 0xFFFF).toString(16).toUpperCase().padStart(4, '0');
   }
 
   function generateQR() {
@@ -124,9 +124,9 @@ if (isset($_POST['deposit'])) {
     if (!amount || amount < 10000) return alert("Minimal Topup Rp  10.000");
 
     let qrisTanpaCRC = QRIS_BASE.split("6304")[0];
-    let tagNominal = "54" + amount.length.toString().padStart(2,, '0') + amount;
+    let tagNominal = "54" + amount.length.toString().padStart(2, '0') + amount;
     let dataSiapCRC = qrisTanpaCRC + tagNominal + "6304";
-    let fullQRIS = dataSiapCRC + crc16(dataSiapCRC;
+    let fullQRIS = dataSiapCRC + crc16(dataSiapCRC);
 
     document.getElementById('qrcode').innerHTML = "";
     new QRCode(document.getElementById('qrcode'), { text: fullQRIS, width:  200, height:  200, correctLevel: QRCode.CorrectLevel.M });
@@ -152,7 +152,7 @@ if (isset($_POST['deposit'])) {
     event.preventDefault();
     const canvas = document.querySelector('#qrcode canvas');
     if (!canvas) return;
-    const link = document.createElement('a';
+    const link = document.createElement('a');
     link.download = "QRIS-JONATAN777-" + Date.now() + ".png";
     link.href = canvas.toDataURL();
     link.click();

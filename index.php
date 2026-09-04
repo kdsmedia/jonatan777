@@ -568,7 +568,12 @@
   <div class="container-fluid px-0" style="padding: 5rem 0;">
     <?php
       include_once "mimintop/modul/sidebar.php";
- 
+
+      $halaman_login_diperlukan = array("deposit", "deposit/qris", "withdraw", "rekening", "riwayat_deposit", "riwayat_withdraw", "riwayat_transaksi", "akun_saya", "ubah_kata_sandi", "profil_saya");
+      if (isset($_GET['halaman']) && in_array($_GET['halaman'], $halaman_login_diperlukan) && !isset($_SESSION['id_akun'])) {
+        echo '<script>window.location.replace("'.$alamat_website.'masuk");</script>';
+        exit;
+      }
 
       if (isset($_GET['halaman'])) {
         if ($_GET['halaman'] == "beranda") {
@@ -601,6 +606,8 @@
           include_once "riwayat_deposit.php";
         } else if ($_GET['halaman'] == "riwayat_withdraw") {
           include_once "riwayat_withdraw.php";
+        } else if ($_GET['halaman'] == "riwayat_transaksi") {
+          include_once "riwayat_transaksi.php";
         } else if ($_GET['halaman'] == "akun_saya") {
           include_once "akun_saya.php";
         } else if ($_GET['halaman'] == "ubah_kata_sandi") {

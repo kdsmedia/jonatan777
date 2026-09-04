@@ -7,6 +7,7 @@
         window.location.replace("'.$alamat_website.'rekening/bank");
       </script>
     ';
+    exit;
   }
   if (isset($_POST['tambah_rekening'])) {
     $kategori_rekening_anggota = $kategori_rekening_aktif;
