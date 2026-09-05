@@ -1017,7 +1017,7 @@
         window.location.replace("<?php echo $alamat_website; ?>");
       });
       $("#keluar").on("click", function () {
-        window.location.replace("keluar.php");
+        window.location.replace("<?php echo $alamat_website; ?>keluar.php");
       });
       // Show or Hide Password
       $("#peralihan-kata-sandi, #peralihan-kata-sandi-masuk-daftar").on("click", function () {
@@ -1247,7 +1247,7 @@
 
 
 <div id="customGif">
-<a href="<?php echo $alamat_website; ?>rtp.php" target="_blank" rel="nofollow"><img src="./assets/images/beranda/rtp.gif" width="75" height="75" border="0" alt="RTP Gif"></a>
+<a href="<?php echo $alamat_website; ?>rtp.php" rel="nofollow"><img src="./assets/images/beranda/rtp.gif" width="75" height="75" border="0" alt="RTP Gif"></a>
 <a href="<?php echo $isi3_livechat; ?>" target="_blank" rel="nofollow"><img src="./assets/images/beranda/image.png" width="75" height="75" border="0" alt="Livechat Alternatif"></a></div>
 
 

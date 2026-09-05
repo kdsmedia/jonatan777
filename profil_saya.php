@@ -46,7 +46,7 @@
     <div class="col-10 px-4">
       <div class="mb-3">
         <label class="form-label" style="font-size: 14px;">Nama Lengkap</label>
-        <input type="text" name="nama_pengguna_akun" class="form-control form-control-sm rounded-0 syarat-nama-lengkap" value="<?php echo $nama_lengkap_akun_masuk; ?>" required>
+        <input type="text" name="nama_lengkap_akun" class="form-control form-control-sm rounded-0 syarat-nama-lengkap" value="<?php echo $nama_lengkap_akun_masuk; ?>" required>
       </div>
       <div class="mb-3">
         <label class="form-label" style="font-size: 14px;">Email</label>

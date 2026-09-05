@@ -9,7 +9,7 @@ if (isset($_GET['link_menu_games'])) {
 } else {
     echo '
       <script>
-        window.location.replace("' . $alamat_website . 'games/slots");
+        window.location.replace("' . $alamat_website . 'games/kategori/slots");
       </script>
     ';
 }
